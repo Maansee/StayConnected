@@ -1,6 +1,6 @@
 app.factory('UserService',function($http){
 	var userService=this;
-	var BASE_URL="/BackendProject"
+	var BASE_URL="/StayConnected"
 		
 	userService.authenticate=function(user){
 		console.log('Entering - submit function in userservice')
