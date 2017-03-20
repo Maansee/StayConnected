@@ -16,7 +16,7 @@ app.factory('BlogService',function($http){
 	};
 	
 	blogService.addComment=function(comment){
-		return $http.post("/BackendProject/blog/comment",comment)
+		return $http.post("/StayConnectedBE/blog/comment",comment)
 	};
 	blogService.getComments=function(blogId){
 		console.log('getcomments -- service')

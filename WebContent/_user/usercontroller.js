@@ -45,7 +45,7 @@ app.controller('UserController',function($scope,$rootScope,$cookieStore,$locatio
 		.then(function(response){ //success 
 			//response.data => user object
 			console.log("registration success" + response.status)
-			$scope.message="Registration successfull.. login using username and password.."
+			$scope.message="Registration successful.. login using username and password.."
 			$location.path("/login");
 		},function(response){//failure
 			console.log("registration failed" + response.status)
