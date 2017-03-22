@@ -35,7 +35,7 @@ $scope.deleteBlog=function(id){
 		
 				function(d){
 					
-					console.log("deleted Successfylly");
+					console.log("deleted Successfully");
 					console.log(d);
 					
 					$location.path('/getAllBlogs')
