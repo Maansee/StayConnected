@@ -88,7 +88,7 @@ app.controller('UserController',function($scope,$rootScope,$cookieStore,$locatio
 		UserService.friendRequest(username)
 		.then(function(response){
 			console.log(response.status);
-			alert('Friend request Send')
+			alert('Friend request Sent')
 			getAllUsers();
 			$location.path('/getAllUsers')
 		},

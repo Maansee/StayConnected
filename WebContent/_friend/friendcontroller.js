@@ -31,7 +31,7 @@ app.controller('FriendController',function($scope,$location,FriendService){
 		.then(function(response){
 			console.log(response.status)
 			if(friendStatus=='A'){
-			alert('You have accepted the friend request. You and ' + fromId + " are friends");
+			alert('you have accepted the friend request. You and ' + fromId + " are friends");
 			$location.path('/friendsList')
 			}
 			else{

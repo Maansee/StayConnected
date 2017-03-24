@@ -22,7 +22,7 @@ Search :
 </tr>
 <tr ng-repeat="blogPost in blogPosts | orderBy:'date':true | filter:search">
 
-<td><a href="#/getBlogDetail/{{blogPost.id}}">{{blogPost.title}}</a></td>
+<td><a href="#/getBlogDetail/{{blogPost.id}}">{{blogPost.BlogTitle}}</a></td>
 <td>Created By : {{blogPost.createdBy.username}}</td>
 <td>Created On: {{blogPost.createdOn | date:'MM/dd/yyyy HH:mm'}}</td>
 

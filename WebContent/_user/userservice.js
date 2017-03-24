@@ -20,7 +20,7 @@ app.factory('UserService',function($http){
 	
 	userService.getAllUsers=function(){
 		console.log('entering getallusers in user service')
-		return $http.get(BASE_URL +"/getUsers")
+		return $http.get(BASE_URL +"/getAllUsers")
 	}
 	
 	userService.friendRequest=function(username){
