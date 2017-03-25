@@ -6,7 +6,7 @@ app.service("ChatService", function($q, $timeout) {
     }, messageIds = [];
     
     service.RECONNECT_TIMEOUT = 30000;
-    service.SOCKET_URL = "/BackendProject/chat";
+    service.SOCKET_URL = "/StayConnectedBE/chat";
     service.CHAT_TOPIC = "/topic/message";
     service.CHAT_BROKER = "/app/chat";
     

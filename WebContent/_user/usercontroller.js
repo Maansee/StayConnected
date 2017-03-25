@@ -2,7 +2,7 @@ app.controller('UserController',function($scope,$rootScope,$cookieStore,$locatio
 	$scope.user={id:'',username:'',password:'',email:'',role:'',isOnline:'',enabled:''};
 	$scope.message;
 	$scope.submit=function(){
-		console.log('Entering - submit function in usercontroller')
+		console.log('Entering submit function in usercontroller')
 		UserService.authenticate($scope.user)
 		.then(function(response){
 			$scope.user=response.data;
@@ -45,7 +45,7 @@ app.controller('UserController',function($scope,$rootScope,$cookieStore,$locatio
 		.then(function(response){ //success 
 			//response.data => user object
 			console.log("registration success" + response.status)
-			$scope.message="Registration successful.. login using username and password.."
+			$scope.message="Registration successfull.. login using username and password.."
 			$location.path("/login");
 		},function(response){//failure
 			console.log("registration failed" + response.status)
@@ -88,7 +88,7 @@ app.controller('UserController',function($scope,$rootScope,$cookieStore,$locatio
 		UserService.friendRequest(username)
 		.then(function(response){
 			console.log(response.status);
-			alert('Friend request Sent')
+			alert('Friend request Send')
 			getAllUsers();
 			$location.path('/getAllUsers')
 		},
