@@ -99,7 +99,8 @@ app.controller('UserController',function($scope,$rootScope,$cookieStore,$locatio
 	
 	
 	function getAllUsers(){
-		console.log('entering get all users ')
+		/*$scope.users = []; //json array
+*/		console.log('entering get all users ')
 		UserService.getAllUsers()
 		.then(function(response){
 		console.log(response.status)
